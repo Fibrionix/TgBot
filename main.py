@@ -1,10 +1,10 @@
-import logging
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 import telebot
 import os
-from dotenv import load_dotenv
+import logging
+from datetime import datetime, timedelta
+from functools import wraps
+
 
 # Настройка логирования
 logging.basicConfig(
